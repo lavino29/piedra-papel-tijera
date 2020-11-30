@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>rock paper scisso</title>
+  </head>
+  <body>
+    <div class="close_active" id="modal_container">
+      <div class="modal_active" id="modal">
+        <p class="close">X</p>
+        <img src="./undraw_Projections_re_1mrh.svg" alt="" />
+        <p class="result"></p>
+      </div>
+    </div>
+    <h1>Welcome to the game by Jose</h1>
+    <div class="container">
+      <div class="control">
+        <table>
+          <tr>
+            <th>PLAYERS</th>
+            <th>WIN</th>
+          </tr>
+          <tr>
+            <td>Player</td>
+            <td id="result_player"></td>
+          </tr>
+          <tr>
+            <td>Aversary</td>
+            <td id="result_adversary"></td>
+          </tr>
+        </table>
+
+        <button id="play">PLAY</button>
+        <label for="round">Round</label>
+        <select name="round" id="round">
+          <option value="1">1</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <main class="main">
+        <div class="player">
+          <div class="playing">
+            <img id="rock-adversary" src="./images.png" alt="" />
+            <img
+              id="scissors-adversary"
+              src="./rock-paper-scissors-296853_960_720.png"
+              alt=""
+            />
+            <img
+              id="paper-adversary"
+              src="./rock-paper-scissors-296855_960_720.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="field">
+          <span id="conteo">VS</span>
+        </div>
+        <div class="player">
+          <div class="playing" id="playing">
+            <img id="rock" src="./images.png" alt="" />
+            <img
+              id="scissors"
+              src="./rock-paper-scissors-296853_960_720.png"
+              alt=""
+            />
+            <img
+              id="paper"
+              src="./rock-paper-scissors-296855_960_720.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
